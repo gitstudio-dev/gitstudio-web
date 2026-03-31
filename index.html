@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EPBQ8H7RQB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EPBQ8H7RQB');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NB3BDGJ3');</script>
+<!-- End Google Tag Manager -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="17650093.png">
+    <title>TechNova GitHub</title>
+    <meta name="description" content="TechNova - oficjalna strona">
+    <meta name="keywords" content="Projekty HTML, TechNova GitHub.io, kodowanie JavaScript, style CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB3BDGJ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <nav>
+        <a href="index.html" class="nav-logo"><i class="fab fa-github"></i><span>TechNova GitHub</span></a>
+        <div>
+            <a href="index.html">Start</a>
+            <a href="o-nas.html">O nas</a>
+            <a href="projekty.html">Projekty</a>
+            <a href="zespol.html">Zespół</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+    <section>
+        <h1 style="font-size: 3rem;">Kodujemy Przyszłość</h1>
+        <p>Innowacyjne rozwiązania Open Source dla każdego.</p>
+        <a href="projekty.html" class="btn">Zobacz co robimy</a>
+    </section>
+<footer>
+    <div class="footer-content">
+        <div class="footer-legal">
+            <a href="polityka-prywatnosci.html">Polityka Prywatności</a>
+            <a href="regulamin.html">Regulamin</a>
+            <a href="rodo.html">Informacja RODO</a>
+        </div>
+
+        <div class="footer-tech">
+            <span><i class="fab fa-google"></i> Monitorowane przez Google Analytics & Search Console</span>
+            <br>
+            <span><i class="fas fa-bolt"></i> Chronione i optymalizowane przez Cloudflare</span>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; 2026 TechNova GitHub. Created by <strong>Kacper Gnyp</strong>.</p>
+            <p style="font-size: 0.7rem; color: var(--text-muted); margin-top: 5px;">
+                Wszystkie generatory działają lokalnie (Client-Side) dla zapewnienia maksymalnej prywatności.
+            </p>
+        </div>
+    </div>
+</footer>
+<div id="cookie-banner" class="cookie-overlay">
+    <div class="cookie-card">
+        <div class="cookie-icon">
+            <i class="fas fa-cookie-bite"></i>
+        </div>
+        <div class="cookie-text">
+            <h4>Prywatność i Pliki Cookies</h4>
+            <p>Używamy Google Analytics i Cloudflare, aby zrozumieć, jak korzystasz z naszej strony. Klikając "Akceptuję", wyrażasz zgodę na przetwarzanie danych analitycznych.</p>
+            <div class="cookie-links">
+                <a href="polityka-prywatnosci.html">Polityka Prywatności</a>
+                <a href="rodo.html">RODO</a>
+            </div>
+        </div>
+        <div class="cookie-actions">
+            <button onclick="acceptCookies()" class="btn-cookie">Akceptuję</button>
+            <button onclick="closeBanner()" class="btn-outline">Zamknij</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function acceptCookies() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+        // Tutaj GTM automatycznie wykryje zdarzenie, jeśli masz ustawiony Trigger na kliknięcie
+        console.log("Cookies zaakceptowane przez użytkownika.");
+    }
+
+    function closeBanner() {
+        document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Sprawdź czy baner był już zaakceptowany
+    window.onload = function() {
+        if (!localStorage.getItem('cookiesAccepted')) {
+            document.getElementById('cookie-banner').style.display = 'flex';
+        }
+    };
+</script>
+</body>
+</html>
